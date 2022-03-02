@@ -73,6 +73,33 @@ struct CustomDatePicker: View {
                         }
                 }
             }
+            
+            VStack(spacing : 20) {
+                Text("Tasks")
+                    .font(.title2.bold())
+                    .frame(maxWidth : .infinity, alignment: .leading)
+                    .padding()
+                
+                if let task = tasks.first(where: { task in
+                    return isSameDay(date1: task.taskDate, date2: currentDate)
+                }) {
+                    ForEach(task.task) { task in
+                        VStack {
+                            Text(task.time.addingTimeInterval(CGFloat.random(in: 0...5000)), style: .time)
+                            //make random task
+                            Text(task.title)
+                                .font(.title2.bold())
+                        }
+                        .padding()
+                        .frame(maxWidth : .infinity, alignment : .leading)
+                        
+                    }
+                } else {
+                    Text("No Tasks")
+                }
+                
+            }
+            .padding()
         }
         .onChange(of: currentMonth) { newValue in
             //updatingMonth
