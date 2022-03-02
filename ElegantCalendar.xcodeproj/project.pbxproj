@@ -11,6 +11,10 @@
 		7981E54A27CF1F1E00CA9D36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7981E54927CF1F1E00CA9D36 /* ContentView.swift */; };
 		7981E54C27CF1F1F00CA9D36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7981E54B27CF1F1F00CA9D36 /* Assets.xcassets */; };
 		7981E54F27CF1F1F00CA9D36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7981E54E27CF1F1F00CA9D36 /* Preview Assets.xcassets */; };
+		7981E55C27CF243300CA9D36 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7981E55B27CF243300CA9D36 /* HomeView.swift */; };
+		7981E55E27CF244C00CA9D36 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7981E55D27CF244C00CA9D36 /* CustomDatePicker.swift */; };
+		7981E56027CF27B600CA9D36 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7981E55F27CF27B600CA9D36 /* DateValue.swift */; };
+		7981E56227CF308700CA9D36 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7981E56127CF308700CA9D36 /* TaskModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		7981E54927CF1F1E00CA9D36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7981E54B27CF1F1F00CA9D36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7981E54E27CF1F1F00CA9D36 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7981E55B27CF243300CA9D36 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7981E55D27CF244C00CA9D36 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		7981E55F27CF27B600CA9D36 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
+		7981E56127CF308700CA9D36 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		7981E54627CF1F1E00CA9D36 /* ElegantCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				7981E55627CF1F6200CA9D36 /* View */,
+				7981E55527CF1F5C00CA9D36 /* Model */,
 				7981E54727CF1F1E00CA9D36 /* ElegantCalendarApp.swift */,
-				7981E54927CF1F1E00CA9D36 /* ContentView.swift */,
 				7981E54B27CF1F1F00CA9D36 /* Assets.xcassets */,
 				7981E54D27CF1F1F00CA9D36 /* Preview Content */,
 			);
@@ -65,6 +74,25 @@
 				7981E54E27CF1F1F00CA9D36 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7981E55527CF1F5C00CA9D36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7981E55D27CF244C00CA9D36 /* CustomDatePicker.swift */,
+				7981E55F27CF27B600CA9D36 /* DateValue.swift */,
+				7981E56127CF308700CA9D36 /* TaskModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7981E55627CF1F6200CA9D36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7981E54927CF1F1E00CA9D36 /* ContentView.swift */,
+				7981E55B27CF243300CA9D36 /* HomeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7981E56227CF308700CA9D36 /* TaskModel.swift in Sources */,
+				7981E55E27CF244C00CA9D36 /* CustomDatePicker.swift in Sources */,
+				7981E55C27CF243300CA9D36 /* HomeView.swift in Sources */,
 				7981E54A27CF1F1E00CA9D36 /* ContentView.swift in Sources */,
 				7981E54827CF1F1E00CA9D36 /* ElegantCalendarApp.swift in Sources */,
+				7981E56027CF27B600CA9D36 /* DateValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
